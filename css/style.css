@@ -39,6 +39,8 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+	 padding: 0;
+	 margin: 0;
 }
 
 input,
@@ -88,6 +90,14 @@ h6 {
 }
 
 /*--------------------------------------*/
+main {
+	height: 100%;
+	background-image: linear-gradient(180deg,rgba(35, 63, 24, 0.6),rgba(65, 130, 94, 0.6)),url('/img/bgd.jpg');
+	/*background: url(/img/bgd.jpg) no-repeat;*/
+	background-size: cover;
+  	position: relative;
+  	padding-top: 20px;
+}
 
 .key {
 	border: 4px solid black;
@@ -101,4 +111,23 @@ h6 {
 	color: white;
 	background: rgba(0,0,0,0.4);
 	text-shadow: 0 0 5px black;
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: #ffc600;
+	box-shadow: 0 0 10px #ffc600;
+}
+
+kbd {
+	display: block;
+	font-size: 40px;
+}
+
+.keys {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items:center;
+	height: 900px;
 }
